@@ -86,7 +86,7 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,7 +139,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -147,17 +147,11 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:hint="Password"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#00000000" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:passwordToggleEnabled="true" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
