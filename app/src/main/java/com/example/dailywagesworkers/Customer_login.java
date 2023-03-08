@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Customer_login extends AppCompatActivity {
     private Button btn1;
     EditText emailId,pass;
-    Button loginUp;
+    Button loginUp,forgetPass;
 
     FirebaseAuth mAuth;
 
@@ -47,6 +47,16 @@ public class Customer_login extends AppCompatActivity {
         emailId=findViewById(R.id.inputEmail);
         pass=findViewById(R.id.inputPassword);
         loginUp=findViewById(R.id.btnLogin);
+        forgetPass=findViewById(R.id.forgotPassword);
+
+        forgetPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),forget_customer_password.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
