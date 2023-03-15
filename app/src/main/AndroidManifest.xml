@@ -14,6 +14,18 @@
         android:theme="@style/Theme.DailyWagesWorkers"
         tools:targetApi="31">
         <activity
+            android:name=".forget_agent_password"
+            android:exported="false" />
+        <activity
+            android:name=".agent_signupaccount"
+            android:exported="false" />
+        <activity
+            android:name=".inside_agent"
+            android:exported="false" />
+        <activity
+            android:name=".activity_agent_login"
+            android:exported="false" />
+        <activity
             android:name=".forget_customer_password"
             android:exported="false" />
         <activity
