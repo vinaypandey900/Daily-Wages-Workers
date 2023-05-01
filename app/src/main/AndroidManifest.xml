@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,50 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyWagesWorkers"
         tools:targetApi="31">
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false"
+            tools:replace="android:exported">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".payNow"
+            android:exported="false" />
+        <activity
+            android:name=".update_agent_profile"
+            android:exported="false" />
+        <activity
+            android:name=".verifyOtp"
+            android:exported="false" />
+        <activity
+            android:name=".addActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sendOtp"
+            android:exported="false" />
+        <activity
+            android:name=".admin"
+            android:exported="false" />
         <activity
             android:name=".forget_agent_password"
             android:exported="false" />

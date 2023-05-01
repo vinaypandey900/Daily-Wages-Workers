@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:title="Search"
+        android:iconTint="@color/white"
+        android:id="@+id/homeSearch"
+        android:icon="@drawable/search_icon"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+
+    <item
+        android:title="Logout"
+        android:id="@+id/logout_menu" />
+
+
+
+
+</menu>

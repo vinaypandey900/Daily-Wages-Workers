@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "106969385009",
+    "firebase_url": "https://dailywagesworkers-3219a-default-rtdb.firebaseio.com",
     "project_id": "dailywagesworkers-3219a",
     "storage_bucket": "dailywagesworkers-3219a.appspot.com"
   },
@@ -10,6 +11,43 @@
         "mobilesdk_app_id": "1:106969385009:android:e71dc91e6f2097bd63ed10",
         "android_client_info": {
           "package_name": "com.example.dailywagesworkers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106969385009-6i8ra3difcl9hutnb8rpu75crjlvsjhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dailywagesworkers",
+            "certificate_hash": "934755c5f2d7ddb16183db50f3c57dd97517be96"
+          }
+        },
+        {
+          "client_id": "106969385009-bv0som1g8uini55kvsgaahlvavo9gh6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkd5WcT6fiO_lLVl1Mkt8bLQSIEkq_guA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106969385009-bv0som1g8uini55kvsgaahlvavo9gh6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106969385009:android:892c3b508f09aa5f63ed10",
+        "android_client_info": {
+          "package_name": "com.knit.dailywagesworkers"
         }
       },
       "oauth_client": [
